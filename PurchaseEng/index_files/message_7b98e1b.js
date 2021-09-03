@@ -1,0 +1,1 @@
+define("pan-center:widget/message/message.js",function(e,n,s){"use strict";var i=e("base:widget/libs/jquerypacket.js"),t={init:function(){window.centerMessage||(window.centerMessage={})}(),create:function(e){window.centerMessage[e]=i.Callbacks()},add:function(e,n){window.centerMessage[e].add(n)},fire:function(e,n){window.centerMessage[e].fire(n)}};s.exports=t});
