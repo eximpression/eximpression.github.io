@@ -142,16 +142,16 @@ header-img: "img/home-bg-o.jpg"
     function _render(){
         var _hash = window.location.hash;
         // en
-        if(_hash == "#en"){
-            $select.selectedIndex = 0;
-            $en.style.display = "block";
-            $zh.style.display = "none";
-        // zh by default
-        }else{
-            // not trigger onChange, otherwise cause a loop call.
+        if(_hash == "#zh"){
             $select.selectedIndex = 1;
             $zh.style.display = "block";
             $en.style.display = "none";
+        // zh by default
+        }else{
+            // not trigger onChange, otherwise cause a loop call.
+            $select.selectedIndex = 0;
+            $en.style.display = "block";
+            $zh.style.display = "none";
         }
     }
 
