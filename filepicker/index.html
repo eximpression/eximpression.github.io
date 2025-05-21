@@ -143,7 +143,7 @@ limitations under the License.
    */
   function createPicker() {
     //const view = new google.picker.View(google.picker.ViewId.DOCS);
-    const view = new google.picker.DocsView().setIncludeFolders(true).setOwnedByMe(true);
+    const view = new google.picker.DocsView().setIncludeFolders(true).setOwnedByMe(true).setSelectFolderEnabled(true);
     //view.setMimeTypes('image/png,image/jpeg,image/jpg');
     const picker = new google.picker.PickerBuilder()
         .enableFeature(google.picker.Feature.NAV_HIDDEN)
