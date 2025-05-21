@@ -80,7 +80,7 @@ limitations under the License.
     tokenClient = google.accounts.oauth2.initTokenClient({
       client_id: CLIENT_ID,
       scope: SCOPES,
-      callback: '', // defined later
+      callback: 'https://everplay-ed7bd.firebaseapp.com/__/auth/handler', // defined later
     });
     gisInited = true;
     maybeEnableButtons();
